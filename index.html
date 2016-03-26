@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<style>
+    li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    
+    li {
+        display: inline;
+    }
+    
+    nav {
+        background: Black;
+        margin-top: -17px;
+        padding: 8px;
+        width: 100%;
+        margin-left: -8px;
+        word-spacing: 10px;
+    }
+    
+    body {
+        background: lightgray;
+    }
+    
+    input:focus + [role="tooltip"] {
+	display: block;
+	position: absolute;
+	top: 100%;
+}
+fieldset {
+    padding: 1.5em;
+    border: 2px solid #222;
+    background: #E0E1EF;
+}
+</style>
+
+<body>
+    <nav role="navigation" aria-label="navigation of lists">
+        <ul class="lists">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+<form action="">
+  <fieldset>
+    <legend>Login form</legend>
+    <div>
+      <label for="username">Your username</label>
+	  <input type="text" id="username" aria-describedby="username-tip" required />
+	  <div role="tooltip" id="username-tip">Your username is your email address</div>
+	</div>
+	<div>
+	  <label for="password">Your password</label>
+	  <input type="text" id="password" aria-describedby="password-tip" required />
+	  <div role="tooltip" id="password-tip">Was emailed to you when you signed up</div>
+	</div>
+    <div>
+       <button>Submit</button>
+    </div>
+  </fieldset>
+</form>
+
+
+
+
+
+ 
+</body>
+
+</html>
