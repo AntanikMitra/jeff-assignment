@@ -30,25 +30,51 @@
     }
     
     input:focus + [role="tooltip"] {
-	display: block;
-	position: absolute;
-	top: 100%;
-}
-fieldset {
-    padding: 1.5em;
-    border: 2px solid #222;
-    background: #E0E1EF;
-}
-
-footer{
-     background: Black;
+        display: block;
+        position: absolute;
+        top: 100%;
+    }
+    
+    fieldset {
+        padding: 1.5em;
+        border: 2px solid #222;
+        background: #E0E1EF;
+    }
+    
+    footer {
+        background: Black;
         margin-top: 10px;
         padding: 8px;
         width: 100%;
         margin-left: -8px;
         color: white;
         text-align: center;
-}
+    }
+    
+    #image {
+        float: left;
+        width: 300px;
+        margin-top: 20px;
+    }
+    
+    .game1 {
+        margin-left: 300px;
+    }
+    
+    .game2{
+        
+        margin-left: 340px;
+    }
+    form{
+        
+        width: 100%;
+        text-align: center;
+        
+    }
+    .but{
+        
+        margin-left: 340px;
+    }
 </style>
 
 <body>
@@ -59,30 +85,50 @@ footer{
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    
-<form action="">
-  <fieldset>
-    <legend>Login form</legend>
-    <div>
-      <label for="username">Your username</label>
-	  <input type="text" id="username" aria-describedby="username-tip" required />
-	  <div role="tooltip" id="username-tip">Your username is your email address</div>
-	</div>
-	<div>
-	  <label for="password">Your password</label>
-	  <input type="text" id="password" aria-describedby="password-tip" required />
-	  <div role="tooltip" id="password-tip">Was emailed to you when you signed up</div>
-	</div>
-    <div>
-       <button>Submit</button>
-    </div>
-  </fieldset>
-</form>
-<footer>
-    
-    copyright 2016 Antanik Mitra
-    
-</footer>
+    <img src="nin.jpg" id="image" alt="nintendo picture taken from amazon.ca" />
+    <section aria-labelledby="information on nintendo" class="game1">
+        <ul class="lists">
+           
+            <li> DS Lite doesn't just play DS games it also features an additional port for Game Boy Advance Game Paks</li><br>
+            <li>Get up to 19 hours continuous gameplay on one charge</li><br>
+            <li>Ready to take on the world? With Nintendo Wi-Fi Connection, you can connect wirelessly, chat with friends while
+                you play and compete with Nintendo DS owners across the globe. All you need to play is a Nintendo DS and
+                a Wi-Fi-ready game</li><br>
+            <li>Twin ultra bright LCD screens that combine crisp, punchy colors, along with touch-screen technology on the lower
+                screen</li><br>
+            <li>Powerful dual processors bring 3D graphics to life with lightning-fast rendering</li>
+            <br>
+            <p><strong>- information from amazon.ca</strong> </p>
+        </ul>
+    </section>
+    <section aria-label="more info" class="game2">
+       <p> The Nintendo DS Lite is a dual-screen handheld game console developed and manufactured by Nintendo. It is the best-selling handheld video game console of all time and also the best-selling DS model of all time. It is a slimmer, brighter, and more lightweight redesign of the original Nintendo DS. It was announced on January 26, 2006, more than a month before its initial release in Japan on March 2, 2006 due to overwhelming demand for the original model. It has been released in Australia, North America, Europe, New Zealand, Singapore, and defined regions in South America, the Middle East, and East Asia. As of March 31, 2014, shipments of the DS Lite have reached 93.86 million units worldwide, according to Nintendo.</p>
+       <p><strong> - information from wikipedia </strong></p>
+    </section>
+    <button href="http://www.w3schools.com/tags/tag_button.asp" class="but">LINK TO INFO</button>
+    <form action="">
+        <fieldset>
+            <legend>Login form</legend>
+            <div>
+                <label for="username">Your username</label>
+                <input type="text" id="username" aria-describedby="username-tip" required />
+                <div role="tooltip" id="username-tip">Your username is your email address</div>
+            </div>
+            <div>
+                <label for="password">Your password</label>
+                <input type="text" id="password" aria-describedby="password-tip" required />
+                <div role="tooltip" id="password-tip">Was emailed to you when you signed up</div>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+
+        copyright 2016 Antanik Mitra
+
+    </footer>
 
 </body>
 
